@@ -24,6 +24,22 @@ function toggleTheme() {
   }
 }
 
+// Function to set the button icon based on current theme on page load
+function setInitialTheme() {
+  const root = document.documentElement;
+  const btn = document.querySelector(".theme-toggle-btn");
+
+  if (root.classList.contains("dark-theme")) {
+    btn.classList.add("dark");
+    btn.classList.remove("light");
+  } else {
+    btn.classList.add("light");
+    btn.classList.remove("dark");
+  }
+}
+
+// Call setInitialTheme when the page loads
+window.addEventListener("DOMContentLoaded", setInitialTheme);
 function toggleReadMore(event) {
   event.preventDefault();
   const moreText = document.getElementById("moreText");

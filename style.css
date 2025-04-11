@@ -441,10 +441,11 @@ section {
 
 .theme-toggle-btn {
   position: fixed;
-  bottom: 0;
+  bottom: 3px;
   left: 0;
-  background-color: transparent;
-  border: 2px solid var(--main-color);
+  background-color: var(--main-color);
+  box-shadow: 0 0 10px black inset;
+  border: 2px solid transparent;
   border-radius: 3rem;
   font-size: 3rem;
   cursor: pointer;
@@ -461,7 +462,7 @@ section {
 
 .theme-toggle-btn.dark .bxs-moon {
   display: inline-block;
-  color: var(--main-color);
+  color: rgb(153, 153, 247);
 }
 
 @media screen and (max-width: 1285px) {
@@ -532,5 +533,9 @@ section {
   .footer .list li {
     display: flex;
     flex-direction: column;
+  }
+
+  .theme-toggle-btn {
+    font-size: 2rem;
   }
 }
