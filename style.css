@@ -371,6 +371,20 @@ section {
   color: white;
 }
 
+.video-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.video-gallery iframe {
+  border: 2px solid var(--main-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
 .contact {
   background-color: var(--bg-color);
 }
